@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vanilla table</title>
+  </head>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+    }
+    html {
+      -webkit-print-color-adjust: exact;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 1px solid #ccc;
+      color: #000;
+      width: 100% !important;
+      border-left: none;
+      border-right: none;
+    }
+
+    th {
+      background: #d9d9d9 !important;
+      color: #000;
+      font-weight: bold !important;
+      width: 20%;
+      border: #000 solid 3px;
+      border-left: none;
+      border-right: none;
+      font-size: 18px !important;
+    }
+
+    th.description {
+      width: 60% !important;
+    }
+    td.description {
+      text-transform: uppercase;
+    }
+    .money {
+      text-align: end;
+      font-weight: 500;
+    }
+    td {
+      border-bottom: 3px solid #a7a7a7;
+    }
+
+    td,
+    th {
+      padding: 10px;
+      text-align: left;
+      font-size: 16px;
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-top: 5px;
+    }
+  </style>
+  <body>
+    <table class="bordered">
+      <thead>
+        <tr>
+          <th>AUTORIZACIONES</th>
+          <th class="description">Cant. Descripción</th>
+          <th class="money">Monto NC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>000412316718</td>
+          <td class="description">Miguel David Rondon Felix</td>
+          <td class="money">$ 20,000.00</td>
+        </tr>
+        <tr>
+          <td>000412316718</td>
+          <td class="description">Miguel David Rondon Felix</td>
+          <td class="money">$ 20,000.00</td>
+        </tr>
+        <tr>
+          <td>000412316718</td>
+          <td class="description">Miguel David Rondon Felix</td>
+          <td class="money">$ 20,000.00</td>
+        </tr>
+        <tr>
+          <td>000412316718</td>
+          <td class="description">Miguel David Rondon Felix</td>
+          <td class="money">$ 20,000.00</td>
+        </tr>
+        <tr>
+          <td>000412316718</td>
+          <td class="description">Miguel David Rondon Felix</td>
+          <td class="money">$ 20,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="total">
+      <span>total</span>
+      <span>$ 78,000.00</span>
+    </div>
+  </body>
+</html>
