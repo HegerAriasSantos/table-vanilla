@@ -4,74 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vanilla table</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <style>
-    body,
-    html {
-      padding: 0;
-      margin: 0;
-    }
-    html {
-      -webkit-print-color-adjust: exact;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      border: 1px solid #ccc;
-      color: #000;
-      width: 100% !important;
-      border-left: none;
-      border-right: none;
-    }
-
-    th {
-      background: #d9d9d9 !important;
-      color: #000;
-      font-weight: bold !important;
-      width: 20%;
-      border: #000 solid 3px;
-      border-left: none;
-      border-right: none;
-      font-size: 18px !important;
-    }
-
-    th.description {
-      width: 60% !important;
-    }
-    td.description {
-      text-transform: uppercase;
-    }
-    .money {
-      text-align: end;
-      font-weight: 500;
-    }
-    td {
-      border-bottom: 3px solid #a7a7a7;
-    }
-
-    td,
-    th {
-      padding: 10px;
-      text-align: left;
-      font-size: 16px;
-      border-left: none !important;
-      border-right: none !important;
-    }
-    .total {
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 18px;
-      padding-top: 5px;
-    }
-  </style>
   <body>
-    <table class="bordered">
+    <header class="header">
+      <div class="header--left">
+        <img src="./logo.png" alt="logo institucional" />
+        <div class="field">
+          <span class="bold">Dirección:</span>
+          <span>Prueba, Republica dominicana</span>
+        </div>
+        <div class="field">
+          <span class="bold">RNC:</span>
+          <span>31895238</span>
+        </div>
+        <div class="field">
+          <span class="bold">Razón Social:</span>
+          <span class="uppercase">arium health</span>
+        </div>
+        <div class="field">
+          <span class="bold">Teléfono:</span>
+          <span>809-765-5443</span>
+        </div>
+        <div class="field">
+          <span class="bold">Fecha:</span>
+          <span>08/09/2023</span>
+          <span class="bold">Hora:</span>
+          <span>11:22 AM</span>
+        </div>
+      </div>
+      <div class="header--right">
+        <h1 class="bold">Nota de Crédito</h1>
+        <div class="field">
+          <span class="bold">NCF:</span>
+          <span>B020000000860</span>
+        </div>
+        <div class="field">
+          <span class="bold">NCF Aplicado:</span>
+          <span>B020000000562</span>
+        </div>
+      </div>
+    </header>
+    <div class="divider"></div>
+    <div class="body">
+      <div class="field large">
+        <span class="bold"
+          >Aseguradora / <br />
+          Razón Social</span
+        >:
+        <span>Primera ARS</span>
+      </div>
+      <div class="field large">
+        <span class="bold">RNC:</span>
+        <span>102-01717-4</span>
+      </div>
+      <div class="field large">
+        <span class="bold">Número NC:</span>
+        <span>NC-2023-44</span>
+      </div>
+    </div>
+    <table>
       <thead>
         <tr>
           <th>AUTORIZACIONES</th>
@@ -111,5 +103,10 @@
       <span>total</span>
       <span>$ 78,000.00</span>
     </div>
+    <footer>
+      <p class="uppercase">
+        nota de crédito a faturar no. NC-2023-44 de fecha 01/09/2023
+      </p>
+    </footer>
   </body>
 </html>
